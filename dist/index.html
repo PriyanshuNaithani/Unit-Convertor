@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  <script type="module" crossorigin src="/assets/index.5e31d4bd.js"></script>
+  <link rel="stylesheet" href="/assets/index.0fc33d89.css">
+</head>
+  <body class="p-2 bg-green-200">
+<div class="flex flex-col lg:items-center">
+  <h1 class="text-4xl font-bold text-yellow-700 lg:self-center lg:text-6xl">Welcome to Unit Converter</h1>
+  <div class="flex flex-col lg:flex-row">
+    <input id="myInput" class=" mt-4 border-4 border-black rounded-md md:p-2" placeholder="Quantity?"/>
+  
+    <select id="fromUnit" class="lg:ml-4 mt-4 border-4 border-black rounded-md md:p-2">
+      <option>Kilometer</option>
+      <option>Meter</option>
+      <option>Centimeter</option>
+      <option>Milimeter</option>
+    </select>
+  
+    <label for="toUnit" class="lg:self-center lg:ml-4 text-2xl font-semibold">To</label>
+  
+    <select id="toUnit" class="lg:mt-4 lg:ml-4 border-4 border-black rounded-md md:p-2">
+      <option>Kilometer</option>
+      <option>Meter</option>
+      <option>Centimeter</option>
+      <option>Milimeter</option>
+    </select>
+  
+    
+    </div>
+  <button class="mt-4 px-12 border-4 border-black bg-red-500 text-white text-xl rounded-md lg:ml-4 md:p-2" onclick="convert()">Convert</button>
+    <div id="result" class="text-3xl font-bold text-black mt-4 md:ml-4">
+  </div>
+  </div>
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
